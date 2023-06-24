@@ -7,15 +7,10 @@ jobs:
     services:
       app:
         image: alialaa17/simple-node-api
-        # credentials:
-        #   username: dewfe
-        #   password: wddwe
         ports:
           - 3001:3000
         env:
           MONGO_HOSTNAME: mongo
-        # volumes
-        # options
       mongo:
         image: mongo
         ports:
