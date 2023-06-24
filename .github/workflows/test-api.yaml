@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Install curl
         run: |
-          apt update && sudo apt upgrade
+          apt update && apt upgrade
           apt install curl
       - name: Dump Services Context
         run: echo '${{ toJson(job.services) }}'
