@@ -4,6 +4,7 @@ on: [push, workflow_dispatch]
 jobs:
   test-api:
     runs-on: ubuntu-latest
+    container: alpine:3.18.2
     services:
       app:
         image: alialaa17/simple-node-api
