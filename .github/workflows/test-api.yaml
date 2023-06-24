@@ -21,6 +21,7 @@ jobs:
         ports:
           - 27017:27017
     steps:
+      - run: netstat -ln | grep 3001
       - name: Dump Services Context
         run: echo '${{ toJson(job.services) }}'
       - name: Post a user
